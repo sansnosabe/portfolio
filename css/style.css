@@ -118,6 +118,7 @@ ul,
 dl {
   margin-top: 0;
   margin-bottom: 1rem;
+  list-style: none;
 }
 
 ol ol,
@@ -125,6 +126,7 @@ ul ul,
 ol ul,
 ul ol {
   margin-bottom: 0;
+  list-style: none;
 }
 
 dt {
@@ -2482,8 +2484,7 @@ textarea.form-control.is-invalid {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -3919,8 +3920,7 @@ input[type="button"].btn-block {
   height: calc(1rem - 4px);
   background-color: #adb5bd;
   border-radius: 0.5rem;
-  transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -5114,8 +5114,7 @@ input[type="button"].btn-block {
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -7208,6 +7207,10 @@ button.bg-dark:focus {
   flex-shrink: 1 !important;
 }
 
+.flex-gap-1 {
+  gap: 1em !important;
+}
+
 .justify-content-start {
   justify-content: flex-start !important;
 }
@@ -7877,6 +7880,9 @@ button.bg-dark:focus {
 .shadow-none {
   box-shadow: none !important;
 }
+.w-70-px {
+  width: 70px !important;
+}
 
 .w-25 {
   width: 25% !important;
@@ -7896,6 +7902,10 @@ button.bg-dark:focus {
 
 .w-auto {
   width: auto !important;
+}
+
+.h-25-px {
+  height: 25px !important;
 }
 
 .h-25 {
@@ -9860,6 +9870,10 @@ button.bg-dark:focus {
   text-transform: capitalize !important;
 }
 
+.fs-6 {
+  font-size: 0.8em !important;
+}
+
 .font-weight-light {
   font-weight: 300 !important;
 }
@@ -9870,6 +9884,10 @@ button.bg-dark:focus {
 
 .font-weight-normal {
   font-weight: 400 !important;
+}
+
+.font-weight-semibold {
+  font-weight: 600 !important;
 }
 
 .font-weight-bold {
@@ -9966,6 +9984,10 @@ a.text-dark:focus {
 
 .text-muted {
   color: #6c757d !important;
+}
+
+.text-black {
+  color: #000000 !important;
 }
 
 .text-black-50 {
@@ -10287,16 +10309,6 @@ h6,
   list-style-type: none;
 }
 
-/* .cont-port img {
-  filter: grayscale();
-  transition: filter 0.4s ease-in-out, border 0.4s ease-in;
-}
-
-.cont-port:hover img {
-  filter: none;
-  transition: filter 0.4s ease-in-out, 0.4s ease-in;
-} */
-
 .view {
   width: 350px;
   height: 250px;
@@ -10344,70 +10356,39 @@ h6,
   visibility: hidden;
 }
 
-.used-skills {
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* background-color: red; */
-}
-
-.used-skills ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-  gap: 1em;
-  color: black;
-  font-size: 0.8em;
-  font-weight: 600;
-}
-
-.used-skills ul li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 1em;
-  padding: 0.2em;
-  width: 70px;
-  height: 25px;
-}
-
-.html {
+.text-html {
   background-color: #f1662a;
 }
 
-.css {
+.text-css {
   background-color: #33a9dc;
 }
 
-.js {
+.text-js {
   background-color: #f5de19;
 }
 
-.react {
-  background-color: #e44f26;
+.text-react {
+  background-color: #00d8ff;
 }
 
-.vue {
-  background-color: #33a9dc;
+.text-vue {
+  background-color: #41b883;
 }
 
-.node {
-  background-color: #f5de19;
+.text-node {
+  background-color: #67b948;
 }
 
-.express {
-  background-color: #e44f26;
+.text-express {
+  color: white;
+  background-color: #000000;
 }
 
-.sql {
-  background-color: #33a9dc;
+.text-sql {
+  background-color: #f8981d;
 }
 
-.mongo {
-  background-color: #33a9dc;
+.text-mongo {
+  background-color: #429944;
 }
