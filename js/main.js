@@ -27,7 +27,7 @@
 
   // Navbar on scrolling (barra de navegacion)
   window.addEventListener("scroll", function () {
-    if (window.scrollY > 200) {
+    if (window.scrollY > 50) {
       document.querySelector(".navbar").style.display = "flex";
     } else {
       document.querySelector(".navbar").style.display = "none";
