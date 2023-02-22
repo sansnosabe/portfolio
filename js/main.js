@@ -26,13 +26,13 @@
   toggleSwitch.addEventListener("change", switchTheme, false);
 
   // Navbar on scrolling (barra de navegacion)
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 50) {
-      document.querySelector(".navbar").style.display = "flex";
-    } else {
-      document.querySelector(".navbar").style.display = "none";
-    }
-  });
+  // window.addEventListener("scroll", function () {
+  //   if (window.scrollY > 50) {
+  //     document.querySelector(".navbar").style.display = "flex";
+  //   } else {
+  //     document.querySelector(".navbar").style.display = "none";
+  //   }
+  // });
 
   // Scroll to Bottom
   window.addEventListener("scroll", function () {
