@@ -46,16 +46,28 @@
   });
 
   // Back to top button
+
+  const backToTop = document.querySelector(".back-to-top");
+
   window.addEventListener("scroll", function () {
-    if (window.scrollY > 200) {
-      document.querySelector(".back-to-top").style.display = "block";
+    if (window.pageYOffset > 200) {
+      backToTop.style.display = "block";
     } else {
-      document.querySelector(".back-to-top").style.display = "none";
+      backToTop.style.display = "none";
     }
   });
-  document.querySelector(".back-to-top").addEventListener("click", function () {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-    return false;
+
+  backToTop.addEventListener("click", function (e) {
+    e.preventDefault();
+    const scrollDuration = 1000;
+    const scrollStep = -window.scrollY / (scrollDuration / 15);
+    const scrollInterval = setInterval(function () {
+      if (window.scrollY !== 0) {
+        window.scrollBy(0, scrollStep);
+      } else {
+        clearInterval(scrollInterval);
+      }
+    }, 15);
   });
 
   // Smooth scrolling on the navbar links (scroll del menu)
@@ -76,7 +88,6 @@
     });
   });
 
-  // Typed Initiate (texto del inicio)
   const typedText = document.querySelector(".typed-text");
   const typedTextOutput = document.querySelector(".typed-text-output");
   if (typedText && typedTextOutput) {
@@ -85,7 +96,7 @@
       typeSpeed: 100,
       backSpeed: 20,
       smartBackspace: false,
-      loop: true,
+      loop: false,
     });
   }
 })();
