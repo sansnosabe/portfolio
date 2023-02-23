@@ -36,17 +36,7 @@
   //   }
   // });
 
-  // Scroll to Bottom
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 100) {
-      document.querySelector(".scroll-to-bottom").style.display = "none";
-    } else {
-      document.querySelector(".scroll-to-bottom").style.display = "block";
-    }
-  });
-
   // Back to top button
-
   const backToTop = document.querySelector(".back-to-top");
 
   window.addEventListener("scroll", function () {
@@ -59,7 +49,7 @@
 
   backToTop.addEventListener("click", function (e) {
     e.preventDefault();
-    const scrollDuration = 1000;
+    const scrollDuration = 700;
     const scrollStep = -window.scrollY / (scrollDuration / 15);
     const scrollInterval = setInterval(function () {
       if (window.scrollY !== 0) {
