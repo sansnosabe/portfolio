@@ -27,6 +27,19 @@
   --danger: #dc3545;
   --light: #ffffff;
   --dark: #343a40;
+  --text-html: #f1662a;
+  --text-css: #33a9dc;
+  --text-js: #f5de19;
+  --text-node: #67b948;
+  --text-react: #00d8ff;
+  --text-vue: #41b883;
+  --text-express: #000000;
+  --text-sql: #f8981d;
+  --text-mongo: #429944;
+  --text-git: #dd4c35;
+  --text-bootstrap: #563d7c;
+  --text-tailwind: #14c4b8;
+
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -10499,40 +10512,52 @@ input:checked + .slider:before {
 }
 
 .text-html {
-  background-color: #f1662a;
+  background-color: var(--text-html);
 }
 
 .text-css {
-  background-color: #33a9dc;
+  background-color: var(--text-css);
 }
 
 .text-js {
-  background-color: #f5de19;
+  background-color: var(--text-js);
 }
 
 .text-react {
-  background-color: #00d8ff;
+  background-color: var(--text-react);
 }
 
 .text-vue {
-  background-color: #41b883;
+  background-color: var(--text-vue);
 }
 
 .text-node {
-  background-color: #67b948;
+  background-color: var(--text-node);
 }
 
 .text-express {
   color: white;
-  background-color: #000000;
+  background-color: var(--text-express);
 }
 
 .text-sql {
-  background-color: #f8981d;
+  background-color: var(--text-sql);
 }
 
 .text-mongo {
-  background-color: #429944;
+  background-color: var(--text-mongo);
+}
+
+.text-git {
+  background-color: var(--text-git);
+}
+
+.text-bootstrap {
+  background-color: var(--text-bootstrap);
+}
+
+.text-tailwind {
+  background-color: var(--text-tailwind);
 }
 
 figure img {
