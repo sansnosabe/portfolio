@@ -8133,7 +8133,7 @@ button.bg-dark:focus {
 
 .mt-6,
 .my-6 {
-  margin-top: 6rem !important;
+  margin-top: 6.5rem !important;
 }
 
 .mr-5,
@@ -8148,7 +8148,7 @@ button.bg-dark:focus {
 
 .mb-6,
 .my-6 {
-  margin-bottom: 5rem !important;
+  margin-bottom: 6.5rem !important;
 }
 
 .ml-5,
@@ -10574,6 +10574,11 @@ figure img {
   margin-left: 1.2em;
 }
 
+.not-active {
+  cursor: default;
+  pointer-events: none;
+}
+
 #es-lang {
   width: 2em;
   height: 2em;
@@ -10600,4 +10605,18 @@ figure img {
   background-size: cover;
   background-position: center;
   border-radius: 100em;
+}
+.skills {
+  width: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3em;
+}
+
+@media (max-width: 419px) {
+  .skills {
+    width: 130px;
+  }
 }
