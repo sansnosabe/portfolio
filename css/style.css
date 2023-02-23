@@ -8026,6 +8026,10 @@ button.bg-dark:focus {
   margin: 0.25rem !important;
 }
 
+.mt-1-px {
+  margin-top: 1px !important;
+}
+
 .mt-1,
 .my-1 {
   margin-top: 0.25rem !important;
@@ -10562,4 +10566,38 @@ input:checked + .slider:before {
 
 figure img {
   width: 65%;
+}
+
+.languageContainer {
+  display: flex;
+  gap: 0.5em;
+  margin-left: 1.2em;
+}
+
+#es-lang {
+  width: 2em;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: url("https://www.countryflags.com/wp-content/uploads/spain-flag-png-large.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 100em;
+}
+
+#en-lang {
+  width: 2em;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: url("https://www.countryflags.com/wp-content/uploads/united-kingdom-flag-png-large.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 100em;
 }
