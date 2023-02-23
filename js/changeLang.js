@@ -18,7 +18,6 @@ const birthdateText = document.querySelector("#birthdateText");
 const addressText = document.querySelector("#addressText");
 const experienceText = document.querySelector("#experienceText");
 const mySkillsText = document.querySelector("#mySkillsText");
-
 const galleryText = document.querySelector("#galleryText");
 const myPortfolioText = document.querySelector("#myPortfolioText");
 const boomTitle = document.querySelector("#boomTitle");
@@ -46,7 +45,8 @@ var language = {
     curriculum: "Descargar CV",
     aboutMe: "Sobre mí",
     profession: "Desarrolladora FullStack",
-    description: "Soy flexible, confiable y tengo excelentes habilidades. Soy responsable y trabajadora. Me adapto a todas las situaciones. Trabajo bien en equipo.",
+    description:
+      "Soy una persona adaptable y confiable, con excelentes habilidades y un enfoque responsable hacia mi trabajo. Tengo una mentalidad flexible que me permite manejar eficazmente diversas situaciones y desafíos. Además, disfruto trabajando en equipo y estoy comprometida con el éxito del grupo.",
     nameTitle: "Nombre:",
     birthdateTitle: "Fecha de nacimiento:",
     birthdateText: "14 de Octubre 1993",
