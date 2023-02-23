@@ -49,7 +49,7 @@ var language = {
       "Soy una persona adaptable y confiable, con excelentes habilidades y un enfoque responsable hacia mi trabajo. Tengo una mentalidad flexible que me permite manejar eficazmente diversas situaciones y desafíos. Además, disfruto trabajando en equipo y estoy comprometida con el éxito del grupo.",
     nameTitle: "Nombre:",
     birthdateTitle: "Fecha de nacimiento:",
-    birthdateText: "14 de Octubre 1993",
+    birthdateText: "14/10/1993",
     phoneTitle: "Teléfono:",
     addressTitle: "Dirección:",
     addressText: "San Sebastián, Gipuzkoa",
