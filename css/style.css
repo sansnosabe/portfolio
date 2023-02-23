@@ -42,6 +42,7 @@ html[data-theme="light"] {
   --text-color: #121416d8;
   --nav-border: #0000001a;
   --nav-icon: url(../img/svg/menu-burger.svg);
+  --text-stroke: 1px #121416d8;
 }
 
 html[data-theme="dark"] {
@@ -50,6 +51,7 @@ html[data-theme="dark"] {
   --text-nav: #f7f8f8;
   --nav-border: #ffffff1a;
   --nav-icon: url(../img/svg/menu-burger-dark.svg);
+  --text-stroke: 1px #dee2e6;
 }
 
 *,
@@ -7234,6 +7236,10 @@ button.bg-dark:focus {
   gap: 1em !important;
 }
 
+.flex-gap-2 {
+  gap: 2em !important;
+}
+
 .justify-content-start {
   justify-content: flex-start !important;
 }
@@ -7907,6 +7913,10 @@ button.bg-dark:focus {
   width: 70px !important;
 }
 
+.w-190-px {
+  width: 190px !important;
+}
+
 .w-25 {
   width: 25% !important;
 }
@@ -8104,6 +8114,11 @@ button.bg-dark:focus {
   margin-top: 3rem !important;
 }
 
+.mt-6,
+.my-6 {
+  margin-top: 6rem !important;
+}
+
 .mr-5,
 .mx-5 {
   margin-right: 3rem !important;
@@ -8112,6 +8127,11 @@ button.bg-dark:focus {
 .mb-5,
 .my-5 {
   margin-bottom: 3rem !important;
+}
+
+.mb-6,
+.my-6 {
+  margin-bottom: 5rem !important;
 }
 
 .ml-5,
@@ -8256,6 +8276,11 @@ button.bg-dark:focus {
 .pb-5,
 .py-5 {
   padding-bottom: 3rem !important;
+}
+
+.pb-6,
+.py-6 {
+  padding-bottom: 3.5rem !important;
 }
 
 .pl-5,
@@ -10508,4 +10533,8 @@ input:checked + .slider:before {
 
 .text-mongo {
   background-color: #429944;
+}
+
+figure img {
+  width: 65%;
 }
