@@ -48,7 +48,7 @@ var language = {
     description:
       "Soy una persona adaptable y confiable, con excelentes habilidades y un enfoque responsable hacia mi trabajo. Tengo una mentalidad flexible que me permite manejar eficazmente diversas situaciones y desafíos. Además, disfruto trabajando en equipo y estoy comprometida con el éxito del grupo.",
     nameTitle: "Nombre:",
-    birthdateTitle: "Fecha de nacimiento:",
+    birthdateTitle: "Fecha:",
     birthdateText: "14/10/1993",
     phoneTitle: "Teléfono:",
     addressTitle: "Dirección:",
