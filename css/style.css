@@ -10530,15 +10530,13 @@ a {
   /* color: #6c757d; */
 }
 
-.github-btn,
-.linkedin-btn {
+.about-btn {
   background: none;
   color: var(--background-color-icon);
   border: none;
 }
 
-.github-btn > *,
-.linkedin-btn > * {
+.about-btn > * {
   font-size: 25px;
 }
 
