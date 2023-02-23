@@ -205,7 +205,7 @@ a {
 
 a:hover {
   color: #0bceaf;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 a:not([href]):not([class]) {
@@ -8030,6 +8030,10 @@ button.bg-dark:focus {
   margin-top: 1px !important;
 }
 
+.mt-2-px {
+  margin-top: 2px !important;
+}
+
 .mt-1,
 .my-1 {
   margin-top: 0.25rem !important;
@@ -10398,6 +10402,7 @@ h6,
   position: relative;
   object-fit: cover;
 }
+
 /* Dark mode, slider, filter gallery & skills colors */
 
 .body {
@@ -10435,6 +10440,7 @@ footer {
 
 a {
   color: var(--text-nav);
+  text-decoration: none;
   font-weight: 500;
 }
 
@@ -10620,4 +10626,16 @@ figure img {
   .skills {
     width: 130px;
   }
+}
+
+.aboutMail,
+.aboutTel {
+  color: #6c757d;
+  font-weight: 400;
+}
+
+.aboutMail:hover,
+.aboutTel:hover {
+  font-weight: 400;
+  color: #6c757d;
 }
