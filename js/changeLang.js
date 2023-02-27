@@ -44,7 +44,7 @@ var translations = {
     galleryText: "Galería",
     myPortfolioText: "Mi portfolio",
     boomTitle: "Boom! - Juego de preguntas",
-    instaPetsTitle: "Instapets - API (en producción)",
+    instaPetsTitle: "Instapets - API",
     soonTitle: "Pronto...",
   },
   en: {
@@ -69,7 +69,7 @@ var translations = {
     galleryText: "Gallery",
     myPortfolioText: "My portfolio",
     boomTitle: "Boom! - Quiz game",
-    instaPetsTitle: "Instapets - API (producing)",
+    instaPetsTitle: "Instapets - API",
     soonTitle: "Soon...",
   },
 };
