@@ -9247,6 +9247,11 @@ button.bg-dark:focus {
   .mx-lg-4 {
     margin-left: 1.5rem !important;
   }
+
+  .ml-lg-4-5 {
+    margin-left: 1.8rem !important;
+  }
+
   .m-lg-5 {
     margin: 3rem !important;
   }
@@ -10657,4 +10662,12 @@ figure img {
 
 .sansdev:hover {
   color: var(--sansdev-hover);
+}
+
+.skills:hover .skill-img {
+  transform: scale(1.8);
+}
+
+.skill-img {
+  transition: transform 0.2s ease-in-out;
 }
