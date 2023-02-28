@@ -51,6 +51,7 @@
 
 html[data-theme="light"] {
   --background-color: #f7f8f8;
+  --background-color-header-icon: #f7f8f8;
   --background-color-icon: #343a40;
   --background-color-header: #0bceaf;
   --sansdev-hover: #f7f8f8;
@@ -62,6 +63,7 @@ html[data-theme="light"] {
 
 html[data-theme="dark"] {
   --background-color: #343a40;
+  --background-color-header-icon: #f7f8f8;
   --background-color-icon: #f7f8f8;
   --sansdev-hover: #0bceaf;
   --text-color: #f7f8f8;
@@ -10664,10 +10666,19 @@ figure img {
   color: var(--sansdev-hover);
 }
 
+.skill-img {
+  transition: transform 0.2s ease-in-out;
+}
+
 .skills:hover .skill-img {
   transform: scale(1.8);
 }
 
-.skill-img {
+.social-icon {
+  color: var(--background-color-header-icon);
   transition: transform 0.2s ease-in-out;
+}
+.social-icon:hover {
+  color: var(--background-color-header-icon);
+  transform: scale(1.6);
 }
