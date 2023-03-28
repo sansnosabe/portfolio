@@ -10248,15 +10248,33 @@ h6,
   border-radius: 100px;
 }
 
-.btn-social {
-  width: 45px;
-  height: 45px;
-  padding-left: 0;
-  padding-right: 0;
-  text-align: center;
-  border-radius: 45px;
-  border: none;
+.social-icon {
+  color: var(--background-color-header-icon);
+  transition: transform 0.2s ease-in-out;
 }
+
+.social-icon:hover {
+  color: var(--background-color-header-icon);
+  transform: scale(1.6);
+}
+
+.social-icon-port {
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon-port:hover {
+  transform: scale(1.2);
+}
+
+.btn-social{
+  width: 2.9rem;
+  height: 2.9rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .btn-social:hover {
   color: white;
 }
@@ -10697,18 +10715,4 @@ figure img {
   transform: scale(1.8);
 }
 
-.social-icon {
-  color: var(--background-color-header-icon);
-  transition: transform 0.2s ease-in-out;
-}
-.social-icon:hover {
-  color: var(--background-color-header-icon);
-  transform: scale(1.6);
-}
 
-.social-icon-port {
-  transition: transform 0.2s ease-in-out;
-}
-.social-icon-port:hover {
-  transform: scale(1.2);
-}
