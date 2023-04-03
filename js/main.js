@@ -25,15 +25,6 @@ function switchTheme(e) {
 
 toggleSwitch.addEventListener("change", switchTheme, false);
 
-// Navbar on scrolling
-// window.addEventListener("scroll", function () {
-//   if (window.scrollY > 200) {
-//     document.querySelector(".navbar").style.display = "flex";
-//   } else {
-//     document.querySelector(".navbar").style.display = "none";
-//   }
-// });
-
 const backToTop = document.querySelector(".back-to-top");
 
 window.addEventListener("scroll", function () {
@@ -85,3 +76,7 @@ if (typedText && typedTextOutput) {
 		loop: false,
 	});
 }
+
+$(function () {
+	$('[data-toggle="tooltip"]').tooltip();
+});
