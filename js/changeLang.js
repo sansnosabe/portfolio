@@ -16,7 +16,7 @@ function translateTo(newLang) {
 
 	Array.from(elements).map(function (element) {
 		var key = element.getAttribute("data-translate");
-		element.textContent = translations[newLang][key];
+		element.innerHTML = translations[newLang][key];
 	});
 
 	document.documentElement.lang = newLang;
@@ -32,22 +32,14 @@ var translations = {
 		aboutText: "Sobre",
 		aboutMeText: "Sobre mí",
 		professionText: "Desarrolladora FullStack",
-		descriptionText:
-			"Soy una persona adaptable y confiable, con excelentes habilidades y un enfoque responsable hacia mi trabajo. Tengo una mentalidad flexible que me permite manejar eficazmente diversas situaciones y desafíos. Además, disfruto trabajando en equipo y estoy comprometida con el éxito del grupo.",
-		nameTitle: "Nombre:",
-		birthdateTitle: "Fecha:",
-		birthdateText: "14/10/1993",
-		addressTitle: "Dirección:",
-		addressText: "San Sebastián, Gipuzkoa",
-		experienceTitle: "Experiencia: ",
-		experienceText: "8 Meses",
-		phoneTitle: "Teléfono:",
-		mySkillsText: "Mis Skills",
+		descriptionText: "Persona adaptable y confiable. <strong>Mentalidad flexible</strong> que me permite manejar eficazmente diversas situaciones y desafíos. Siempre comprometida con el <strong>éxito del grupo</strong>.",
+		descriptionText2: "Viviendo en <strong>San Sebastián, Gipúzcoa</strong>. +1 año de experiencia.",
 		galleryText: "Galería",
 		myPortfolioText: "Mi portfolio",
-		boomTitle: "Boom! - Juego de preguntas",
-		instaPetsTitle: "Instapets - API",
-		soonTitle: "Pronto...",
+		boomDescription: "Boom! es un juego con 50 preguntas sobre cine.",
+		photoPetsDescription: "Photopets es una copia de Instagram, pero los usuarios son animales.",
+		crudDescription: "Es un CRUD de clientes hecho con Vue y el backend con node, express y MySQL.",
+		soonTitle: "Pronto...",	
 	},
 	en: {
 		homeText: "Home",
@@ -58,20 +50,13 @@ var translations = {
 		aboutMeText: "About me",
 		professionText: "FullStack Developer",
 		descriptionText:
-			"I am an adaptable and reliable person with excellent skills and a responsible approach to my work. I have a flexible mindset that enables me to effectively handle diverse situations and challenges. Additionally, I enjoy working in a team and I am committed to the group's success.",
-		nameTitle: "Name:",
-		birthdateTitle: "Birthday:",
-		birthdateText: "14/10/1993",
-		addressTitle: "Address:",
-		addressText: "St Sebastian, Guipuzcoa",
-		experienceTitle: "Experience: ",
-		experienceText: "8 Months",
-		phoneTitle: "Phone:",
-		mySkillsText: "My Skills",
+			"Adaptable and reliable person. <strong>Flexible mindset</strong> that enables me to effectively handle diverse situations and challenges. Always committed to the <strong>group's success</strong>.",
+		descriptionText2: "Living in <strong>San Sebastián, Gipúzcoa</strong>. +1 year experience.",
 		galleryText: "Gallery",
 		myPortfolioText: "My portfolio",
-		boomTitle: "Boom! - Quiz game",
-		instaPetsTitle: "Instapets - API",
+		boomDescription: "Boom! is a game with 50 questions about cinema.",
+		photoPetsDescription: "Photopets is a copy of Instagram, but the users are animals.",
+		crudDescription: "It's a customer CRUD built with Vue on the front-end and with Node.js, Express, and MySQL on the back-end.",
 		soonTitle: "Soon...",
 	},
 };
