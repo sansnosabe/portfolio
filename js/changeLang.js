@@ -39,7 +39,8 @@ var translations = {
 		boomDescription: "Boom! es un juego con 50 preguntas sobre cine.",
 		crudDescription: "Es un CRUD de clientes hecho con Vue y el backend con node, express y MySQL.",
 		photoPetsDescription: "Photopets es una copia de Instagram, pero los usuarios son animales.",
-		moviesDescription: "Buscador de peliculas.",
+		movieTitle: "Buscador de peliculas",
+		movieDescription: "Buscador de peliculas.",
 		soonTitle: "Pronto...",	
 	},
 	en: {
@@ -58,7 +59,8 @@ var translations = {
 		boomDescription: "Boom! is a game with 50 questions about cinema.",
 		crudDescription: "It's a customer CRUD built with Vue on the front-end and with Node.js, Express, and MySQL on the back-end.",
 		photoPetsDescription: "Photopets is a copy of Instagram, but the users are animals.",
-		moviesDescription: "Movie finder.",
+		movieTitle: "Movie finder",
+		movieDescription: "Movie finder.",
 		soonTitle: "Soon...",
 	},
 };
