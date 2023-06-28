@@ -37,29 +37,6 @@ function switchTheme(e) {
 
 toggleSwitch.addEventListener("change", switchTheme, false);
 
-const backToTop = document.querySelector(".back-to-top");
-
-window.addEventListener("scroll", function () {
-  if (window.pageYOffset > 200) {
-    backToTop.style.display = "block";
-  } else {
-    backToTop.style.display = "none";
-  }
-});
-
-backToTop.addEventListener("click", function (e) {
-  e.preventDefault();
-  const scrollDuration = 700;
-  const scrollStep = -window.scrollY / (scrollDuration / 15);
-  const scrollInterval = setInterval(function () {
-    if (window.scrollY !== 0) {
-      window.scrollBy(0, scrollStep);
-    } else {
-      clearInterval(scrollInterval);
-    }
-  }, 15);
-});
-
 const navbarLinks = document.querySelectorAll(".navbar-nav a");
 navbarLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
