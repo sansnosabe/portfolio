@@ -1,347 +1,441 @@
 <!DOCTYPE html>
 <html lang="es" data-theme="dark">
-	<head>
-		<meta charset="utf-8" />
-		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
-		<meta property="og:image" content="https://raw.githubusercontent.com/sansnosabe/portfolio/main/img/ogimage.png" />
-		<meta property="og:url" content="https://www.sandraerentxun.dev" />
-		<link rel="icon" type="image/x-icon" href="img/svg/logo.svg" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-			integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-			crossorigin="anonymous"
-		/>
-		<link href="css/style.css" rel="stylesheet" />
-		<title>Sandra Erentxun - Portfolio</title>
-	</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/sansnosabe/portfolio/main/img/ogimage.png" />
+    <meta property="og:url" content="https://www.sandraerentxun.dev" />
+    <link rel="icon" type="image/x-icon" href="img/svg/logo.svg" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Sandra Erentxun - Portfolio</title>
+  </head>
 
-	<body>
-		<!-- Header Start -->
-		<header class="navbar fixed-top shadow-sm navbar-icon navbar-expand-lg py-1 py-lg-0 px-lg-5">
-			<div class="navbar-nav">
-				<a href="#home" class="navbar-brand ml-lg-3 nohover">
-					<h1 class="m-0">
-						<img src="img/svg/logo.svg" />
-						sansdev
-					</h1>
-				</a>
-			</div>
+  <body>
+    <!-- Header Start -->
+    <header class="navbar fixed-top shadow-sm navbar-icon navbar-expand-lg py-1 py-lg-0 px-lg-5">
+      <div class="navbar-nav">
+        <a href="#home" class="navbar-brand ml-lg-3 nohover">
+          <h1 class="m-0">
+            <img src="img/svg/logo.svg" />
+            sansdev
+          </h1>
+        </a>
+      </div>
 
-			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-				<span class="toggler-icon"></span>
-			</button>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="toggler-icon"></span>
+      </button>
 
-			<nav class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
-				<menu class="navbar-nav m-auto py-0">
-					<li>
-						<a href="#home" data-translate="homeText" class="nav-item nav-link">Home</a>
-					</li>
-					<li>
-						<a href="#about" data-translate="aboutNavText" class="nav-item nav-link">About</a>
-					</li>
-					<li>
-						<a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-					</li>
-				</menu>
-				<div class="d-flex flex-gap-1">
-					<label class="theme-switch" for="checkbox">
-						<input type="checkbox" id="checkbox" checked />
-						<div class="slider round"></div>
-					</label>
+      <nav class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+        <menu class="navbar-nav m-auto py-0">
+          <li>
+            <a href="#home" data-translate="home" class="nav-item nav-link">Home</a>
+          </li>
+          <li>
+            <a href="#about" data-translate="about" class="nav-item nav-link">About</a>
+          </li>
+          <li>
+            <a href="#career" data-translate="career" class="nav-item nav-link">Career</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+          </li>
+        </menu>
+        <div class="d-flex flex-gap-1">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" checked />
+            <div class="slider round"></div>
+          </label>
 
-					<div class="languageContainer">
-						<button id="en-lang"></button>
-						<button id="es-lang"></button>
-					</div>
-				</div>
-			</nav>
-		</header>
-		<!-- Header End -->
+          <div class="languageContainer">
+            <button id="en-lang"></button>
+            <button id="es-lang"></button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header End -->
 
-		<!-- Home Start -->
-		<main class="container-fluid d-flex align-items-center justify-content-center mb-5 py-5 min-vh-100" id="home">
-			<section class="container row d-flex align-items-center justify-content-center">
-				<figure class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
-					<img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profile.webp" alt="" />
-				</figure>
-				<article class="col-lg-4 text-center text-lg-left">
-					<h3 data-translate="imText" class="text-white font-weight-normal mb-3">I'm</h3>
-					<h1 class="display-3 text-uppercase text-primary" style="-webkit-text-stroke: 2px #ffffff">Sandra Erentxun</h1>
-					<h2 class="typed-text-output d-inline font-weight-lighter text-white"></h2>
-					<h2 class="typed-text d-none">FullStack Developer</h2>
-					<div class="d-flex align-items-center justify-content-center justify-content-lg-start lg-pt-5 pt-3 flex-gap-1">
-						<a
-							href="img/CurriculumVitae-Sandra(2023).pdf"
-							download="CurriculumVitae-Sandra(2023)"
-							data-translate="curriculumText"
-							class="btn btn-outline-light"
-							>Download CV
-						</a>
-						<a class="social-icon fs-3" href="https://github.com/sansnosabe" target="_blank">
-							<i class="fab fa-github"></i>
-						</a>
-						<a class="social-icon fs-3" href="https://www.linkedin.com/in/sandra-erentxun" target="_blank">
-							<i class="fab fa-linkedin-in"></i>
-						</a>
-					</div>
-				</article>
-			</section>
-		</main>
-		<!-- Header End -->
+    <!-- Home Start -->
+    <main class="container-fluid d-flex align-items-center justify-content-center mb-5 py-5 min-vh-100" id="home">
+      <section class="container row d-flex align-items-center justify-content-center">
+        <figure class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+          <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profile.webp" alt="" />
+        </figure>
+        <article class="col-lg-4 text-center text-lg-left">
+          <h3 data-translate="imText" class="text-white font-weight-normal mb-3">I'm</h3>
+          <h1 class="display-3 text-uppercase text-primary" style="-webkit-text-stroke: 2px #ffffff">Sandra Erentxun</h1>
+          <h2 class="typed-text-output d-inline font-weight-lighter text-white"></h2>
+          <h2 class="typed-text d-none">FullStack Developer</h2>
+          <div class="d-flex align-items-center justify-content-center justify-content-lg-start lg-pt-5 pt-3 flex-gap-1">
+            <a
+              href="img/CurriculumVitae-Sandra(2023).pdf"
+              download="CurriculumVitae-Sandra(2023)"
+              data-translate="curriculumText"
+              class="btn btn-outline-light"
+              >Download CV
+            </a>
+            <a class="social-icon fs-3" href="https://github.com/sansnosabe" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a class="social-icon fs-3" href="https://www.linkedin.com/in/sandra-erentxun" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </article>
+      </section>
+    </main>
+    <!-- Home End -->
 
-		<!-- About Start -->
-		<main class="container py-5 min-vh-100" id="about">
-			<header class="position-relative d-flex align-items-center justify-content-center mb-5">
-				<h1 data-translate="aboutText" class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6">About</h1>
-				<h1 data-translate="aboutMeText" class="position-absolute text-uppercase text-primary">About Me</h1>
-			</header>
-			<section class="row align-items-center">
-				<figure class="col-lg-5 pb-4 pb-lg-0">
-					<img class="img-fluid rounded w-100" src="img/about.webp" alt="" />
-				</figure>
-				<article class="col-lg-7 about-article">
-					<p data-translate="descriptionText" class="text-left fs-4 description">
-						Adaptable and reliable person. <strong>Flexible mindset</strong> that enables me to effectively handle diverse situations and challenges.
-						Always committed to the <strong>group's success</strong>.
-					</p>
-					<p data-translate="descriptionText2" class="text-left fs-4 description">
-						Living in <strong>San Sebastián, Gipúzcoa</strong>. +1 year experience.
-					</p>
+    <!-- About Start -->
+    <main class="container py-5 min-vh-100" id="about">
+      <header class="position-relative d-flex align-items-center justify-content-center mb-5">
+        <h1 data-translate="about" class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6">About</h1>
+        <h1 data-translate="aboutMeTitle" class="position-absolute text-uppercase text-primary">About Me</h1>
+      </header>
+      <section class="row align-items-center">
+        <figure class="col-lg-5 pb-4 pb-lg-0">
+          <img class="img-fluid rounded w-100" src="img/about.webp" alt="" />
+        </figure>
+        <article class="col-lg-7 about-article">
+          <p data-translate="aboutText" class="text-left fs-4 description">
+            Adaptable and reliable person. <strong>Flexible mindset</strong> that enables me to effectively handle diverse situations and challenges.
+            Always committed to the <strong>group's success</strong>.
+          </p>
+          <p data-translate="aboutText2" class="text-left fs-4 description">
+            Living in <strong>San Sebastián, Gipúzcoa</strong>. +6 months experience.
+          </p>
 
-					<section class="d-flex flex-column align-items-center align-items-lg-start flex-gap-2">
-						<h4 class="text-uppercase font-weight-bolder pt-5 mb-n1">Skills</h4>
-						<div class="d-flex flex-gap-1">
-							<a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">
-								<img class="skill-img" src="img/svg/html.svg" alt="html-logo" data-toggle="tooltip" data-placement="top" title="HTML" />
-							</a>
-							<a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">
-								<img class="skill-img" src="img/svg/css.svg" alt="css-logo" data-toggle="tooltip" data-placement="top" title="CSS" />
-							</a>
-							<a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">
-								<img class="skill-img" src="img/svg/js.svg" alt="js-logo" data-toggle="tooltip" data-placement="top" title="JavaScript" />
-							</a>
-							<a href="https://es.reactjs.org/" target="_blank">
-								<img class="skill-img" src="img/svg/reactjs.svg" alt="reactjs-logo" data-toggle="tooltip" data-placement="top" title="ReactJS" />
-							</a>
-							<a href="https://vuejs.org/" target="_blank">
-								<img class="skill-img" src="img/svg/vuejs.svg" alt="vuejs-logo" data-toggle="tooltip" data-placement="top" title="VueJS" />
-							</a>
-							<a href="https://nodejs.org/" target="_blank">
-								<img class="skill-img" src="img/svg/nodejs.svg" alt="nodejs-logo" data-toggle="tooltip" data-placement="top" title="NodeJS" />
-							</a>
-						</div>
-						<div class="d-flex flex-gap-1">
-							<a href="https://expressjs.com/" target="_blank">
-								<img class="skill-img" src="img/svg/express.svg" alt="express-logo" data-toggle="tooltip" data-placement="top" title="Express" />
-							</a>
-							<a href="https://www.mysql.com/" target="_blank">
-								<img class="skill-img" src="img/svg/mysql.svg" alt="mysql-logo" data-toggle="tooltip" data-placement="top" title="MySQL" />
-							</a>
-							<a href="https://www.mongodb.com/" target="_blank">
-								<img class="skill-img" src="img/svg/mongo.svg" alt="mongo-logo" data-toggle="tooltip" data-placement="top" title="MongoDB" />
-							</a>
-							<a href="https://git-scm.com/" target="_blank">
-								<img class="skill-img" src="img/svg/git2.svg" alt="git-logo" data-toggle="tooltip" data-placement="top" title="Git" />
-							</a>
-							<a href="https://getbootstrap.com/" target="_blank">
-								<img class="skill-img" src="img/svg/bootstrap.svg" alt="bootstrap-logo" data-toggle="tooltip" data-placement="top" title="Bootstrap" />
-							</a>
-							<a href="https://tailwindcss.com/" target="_blank">
-								<img class="skill-img" src="img/svg/tailwindcss.svg" alt="tailwind-logo" data-toggle="tooltip" data-placement="top" title="Tailwind" />
-							</a>
-						</div>
-					</section>
-				</article>
-			</section>
-		</main>
-		<!-- About End -->
+          <section class="d-flex flex-column align-items-center align-items-lg-start flex-gap-2">
+            <h4 data-translate="skills" class="text-uppercase font-weight-bolder pt-5 mb-n1">Skills</h4>
+            <div class="d-flex flex-gap-1">
+              <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">
+                <img class="skill-img" src="img/svg/html.svg" alt="html-logo" data-toggle="tooltip" data-placement="top" title="HTML" />
+              </a>
+              <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">
+                <img class="skill-img" src="img/svg/css.svg" alt="css-logo" data-toggle="tooltip" data-placement="top" title="CSS" />
+              </a>
+              <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">
+                <img class="skill-img" src="img/svg/js.svg" alt="js-logo" data-toggle="tooltip" data-placement="top" title="JavaScript" />
+              </a>
+              <a href="https://es.reactjs.org/" target="_blank">
+                <img class="skill-img" src="img/svg/reactjs.svg" alt="reactjs-logo" data-toggle="tooltip" data-placement="top" title="ReactJS" />
+              </a>
+              <a href="https://vuejs.org/" target="_blank">
+                <img class="skill-img" src="img/svg/vuejs.svg" alt="vuejs-logo" data-toggle="tooltip" data-placement="top" title="VueJS" />
+              </a>
+              <a href="https://nodejs.org/" target="_blank">
+                <img class="skill-img" src="img/svg/nodejs.svg" alt="nodejs-logo" data-toggle="tooltip" data-placement="top" title="NodeJS" />
+              </a>
+            </div>
+            <div class="d-flex flex-gap-1">
+              <a href="https://expressjs.com/" target="_blank">
+                <img class="skill-img" src="img/svg/express.svg" alt="express-logo" data-toggle="tooltip" data-placement="top" title="Express" />
+              </a>
+              <a href="https://www.mysql.com/" target="_blank">
+                <img class="skill-img" src="img/svg/mysql.svg" alt="mysql-logo" data-toggle="tooltip" data-placement="top" title="MySQL" />
+              </a>
+              <a href="https://www.mongodb.com/" target="_blank">
+                <img class="skill-img" src="img/svg/mongo.svg" alt="mongo-logo" data-toggle="tooltip" data-placement="top" title="MongoDB" />
+              </a>
+              <a href="https://git-scm.com/" target="_blank">
+                <img class="skill-img" src="img/svg/git2.svg" alt="git-logo" data-toggle="tooltip" data-placement="top" title="Git" />
+              </a>
+              <a href="https://getbootstrap.com/" target="_blank">
+                <img
+                  class="skill-img"
+                  src="img/svg/bootstrap.svg"
+                  alt="bootstrap-logo"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Bootstrap"
+                />
+              </a>
+              <a href="https://tailwindcss.com/" target="_blank">
+                <img
+                  class="skill-img"
+                  src="img/svg/tailwindcss.svg"
+                  alt="tailwind-logo"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Tailwind"
+                />
+              </a>
+            </div>
+          </section>
+        </article>
+      </section>
+    </main>
+    <!-- About End -->
 
-		<!-- Portfolio Start -->
-		<main class="container py-5 min-vh-100" id="portfolio">
-			<header class="position-relative d-flex align-items-center justify-content-center mb-5">
-				<h1 data-translate="galleryText" class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6">Gallery</h1>
-				<h1 data-translate="myPortfolioText" class="position-absolute text-uppercase text-primary">My Portfolio</h1>
-			</header>
+    <!-- Career Start -->
+    <main class="container container-fluid py-5" id="career">
+      <div class="position-relative d-flex align-items-center justify-content-center">
+        <h1 data-translate="career" class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6">Career</h1>
+        <h1 data-translate="educationAndExperienceTitle" class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 data-translate="educationTitle" class="mb-4">My Education</h3>
+          <div class="border-left border-primary pt-2 pl-4 ml-2">
+            <div class="position-relative mb-4">
+              <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px"></i>
+              <h5 data-translate="education1" class="font-weight-bold mb-1">NVQ level 2 Microcomputer Systems and Networks</h5>
+              <p class="mb-2"><strong>Xabier Zubiri Mateo</strong> | <small>2014 - 2016</small></p>
+              <p data-translate="education1description">
+                Installation and configuration of software and networks, assembly and configuration of computers and peripherals, management of
+                services and applications in a network, logistics in microcomputer systems: installation and maintenance, diagnosis of problems in
+                systems and networks, layout and connection of local and external networks, data and application recovery in case of failures, and
+                preparation of technical documentation, budgets, and customer advisory.
+              </p>
+            </div>
+            <div class="position-relative mb-4">
+              <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px"></i>
+              <h5 data-translate="education2" class="font-weight-bold mb-1">Design and publication of web pages</h5>
+              <p class="mb-2"><strong>Ceinpro</strong> | <small>2021</small></p>
+              <p data-translate="education2description">
+                Design and develop functional web pages using HTML, CSS, and JavaScript or PHP, following usability standards. Implement them on the
+                corresponding server after performing installation and verification procedures. Conduct thorough testing to ensure proper
+                functionality and optimization.
+              </p>
+            </div>
+            <div class="position-relative mb-4">
+              <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px"></i>
+              <h5 data-translate="education3" class="font-weight-bold mb-1">Development of Applications with Node and Express</h5>
+              <p class="mb-2"><strong>Ceinpro</strong> | <small>2022</small></p>
+              <p data-translate="education3description">
+                Advanced concepts of JavaScript, learning to install Node.js, configuring editors and utilities, using 'npm' as a package manager,
+                understanding the package.json file, installing basic packages and Express, working with the Node.js event loop, using EventEmitter
+                and modules, creating an MVC structure with Express, implementing routing with static and parameterized routes, creating REST APIs,
+                applying middleware, managing sessions, connecting to databases, designing views and templates.
+              </p>
+            </div>
 
-			<section class="d-flex flex-wrap flex-gap-2 portfolio-section">
-				<article class="d-flex flex-column align-items-center justify-content-center">
-					<header>
-						<a href="https://sansnosabe.github.io/boom-quiz/" target="_blank">
-							<figure class="zoom-header">
-								<img class="img-port" src="img/portfolio-1.webp" alt="portfolio-1" />
-								<figcaption data-translate="boomDescription">Boom! is a game with 50 questions about cinema.</figcaption>
-							</figure>
-						</a>
-					</header>
-					<main class="d-flex flex-column text-center pt-3">
-						<h3>Boom!</h3>
-						<ul class="d-flex justify-content-center flex-gap-1 skills-list">
-							<li>
-								<img src="img/svg/html.svg" alt="html-logo" />
-							</li>
-							<li>
-								<img src="img/svg/css.svg" alt="css-logo" />
-							</li>
-							<li>
-								<img src="img/svg/js.svg" alt="js-logo" />
-							</li>
-						</ul>
-					</main>
-					<footer class="pt-1">
-						<a class="social-icon fs-2" href="https://github.com/sansnosabe/boom-quiz" target="_blank">
-							<i class="social-icon-port fab fa-github git-btn"></i>
-						</a>
-					</footer>
-				</article>
+            <div class="position-relative mb-4">
+              <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px"></i>
+              <h5 data-translate="education4" class="font-weight-bold mb-1">Fullstack Web Development Bootcamp</h5>
+              <p class="mb-2"><strong>Hack a Boss</strong> | <small>2022</small></p>
+              <p data-translate="education4description">
+                HTML for structuring content, CSS for styling and making it responsive, JavaScript for programming functionalities, the DOM for
+                interacting with the page structure, databases for storing and querying information, Node.js and Express.js for creating servers and
+                APIs, and ReactJS for designing dynamic and efficient interfaces. Layout, programming, element manipulation, database interaction, and
+                web application development, with the goal of creating complete and optimized projects. Additionally, emphasis is placed on the
+                importance of implementing pages on the appropriate server, conducting thorough testing, and optimizing their performance.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h3 data-translate="experienceTitle" class="mb-4">My Expericence</h3>
+          <div class="border-left border-primary pt-2 pl-4 ml-2">
+            <div class="position-relative mb-4">
+              <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px"></i>
+              <h5 data-translate="experience1" class="font-weight-bold mb-1">Fullstack Developer</h5>
+              <p class="mb-2"><strong>Intelligent Biodata</strong> | <small>2022</small></p>
+              <p data-translate="experience1description">
+                I developed a comprehensive platform using Vue.js that covers employee time tracking, vacation administration, and assignment of
+                project access permissions based on roles and responsibilities. Additionally, I implemented functions for project tracking and
+                assignment, providing a clear view of their progress. I also included features for user administration and the creation of robust
+                databases. Furthermore, I incorporated data analysis tools and intuitive chart generation for visually representative information.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Career End -->
 
-				<article class="d-flex flex-column align-items-center justify-content-center">
-					<header>
-						<a href="https://github.com/sansnosabe/vue-project" target="_blank">
-							<figure class="zoom-header">
-								<img class="img-port" src="img/portfolio-2.webp" alt="portfolio-2" />
-								<figcaption data-translate="crudDescription">It's a customer CRUD built with Vue on the front-end and with Node.js, Express, and MySQL on the back-end.</figcaption>
-							</figure>
-						</a>
-					</header>
-					<main class="d-flex flex-column text-center pt-3">
-						<h3>CRUD</h3>
-						<ul class="d-flex justify-content-center flex-gap-1 skills-list">
-							<li>
-								<img src="img/svg/nodejs.svg" alt="nodejs-logo" />
-							</li>
-							<li>
-								<img src="img/svg/express.svg" alt="express-logo" />
-							</li>
-							<li>
-								<img src="img/svg/mysql.svg" alt="mysql-logo" />
-							</li>
-							<li>
-								<img src="img/svg/vuejs.svg" alt="vuejs-logo" />
-							</li>
-						</ul>
-					</main>
-					<footer class="pt-1">
-						<a class="social-icon fs-2" href="https://github.com/sansnosabe/vue-project" target="_blank">
-							<i class="social-icon-port fab fa-github git-btn"></i>
-						</a>
-					</footer>
-				</article>
+    <!-- Portfolio Start -->
+    <main class="container py-5 min-vh-100" id="portfolio">
+      <header class="position-relative d-flex align-items-center justify-content-center mb-5">
+        <h1 data-translate="gallery" class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6">Gallery</h1>
+        <h1 data-translate="myPortfolioTitle" class="position-absolute text-uppercase text-primary">My Portfolio</h1>
+      </header>
 
-				<article class="d-flex flex-column align-items-center justify-content-center">
-					<header>
-						<a href="https://github.com/sansnosabe/instapets" target="_blank">
-							<figure class="zoom-header">
-								<img class="img-port" src="img/portfolio-3.webp" alt="portfolio-3" />
-								<figcaption data-translate="photoPetsDescription">Photopets is a copy of Instagram, but the users are animals.</figcaption>
-							</figure>
-						</a>
-					</header>
-					<main class="d-flex flex-column text-center pt-3">
-						<h3>Photopets</h3>
-						<ul class="d-flex justify-content-center flex-gap-1 skills-list">
-							<li>
-								<img src="img/svg/nodejs.svg" alt="nodejs-logo" />
-							</li>
-							<li>
-								<img src="img/svg/express.svg" alt="express-logo" />
-							</li>
-							<li>
-								<img src="img/svg/mysql.svg" alt="mysql-logo" />
-							</li>
-							<li>
-								<img src="img/svg/reactjs.svg" alt="reactjs-logo" />
-							</li>
-							<li>
-								<img src="img/svg/tailwindcss.svg" alt="tailwindcss-logo" />
-							</li>
-						</ul>
-					</main>
-					<footer class="pt-1">
-						<a class="social-icon fs-2" href="https://github.com/sansnosabe/photopets" target="_blank">
-							<i class="social-icon-port fab fa-github git-btn"></i>
-						</a>
-					</footer>
-				</article>
+      <section class="d-flex flex-wrap flex-gap-2 portfolio-section">
+        <article class="d-flex flex-column align-items-center justify-content-center">
+          <header>
+            <a href="https://sansnosabe.github.io/boom-quiz/" target="_blank">
+              <figure class="zoom-header">
+                <img class="img-port" src="img/portfolio-1.webp" alt="portfolio-1" />
+                <figcaption data-translate="boomDescription">Boom! is a game with 50 questions about cinema.</figcaption>
+              </figure>
+            </a>
+          </header>
+          <main class="d-flex flex-column text-center pt-3">
+            <h3>Boom!</h3>
+            <ul class="d-flex justify-content-center flex-gap-1 skills-list">
+              <li>
+                <img src="img/svg/html.svg" alt="html-logo" />
+              </li>
+              <li>
+                <img src="img/svg/css.svg" alt="css-logo" />
+              </li>
+              <li>
+                <img src="img/svg/js.svg" alt="js-logo" />
+              </li>
+            </ul>
+          </main>
+          <footer class="pt-1">
+            <a class="social-icon fs-2" href="https://github.com/sansnosabe/boom-quiz" target="_blank">
+              <i class="social-icon-port fab fa-github git-btn"></i>
+            </a>
+          </footer>
+        </article>
 
-				<article class="d-flex flex-column align-items-center justify-content-center">
-					<header>
-						<a href="https://buscador-peliculas-nine.vercel.app/" target="_blank">
-							<figure class="zoom-header">
-								<img class="img-port" src="img/portfolio-4.webp" alt="portfolio-4" />
-								<figcaption data-translate="movieDescription">Movie finder.</figcaption>
-							</figure>
-						</a>
-					</header>
-					<main class="d-flex flex-column text-center pt-3">
-						<h3 data-translate="movieTitle">Movie finder</h3>
-						<ul class="d-flex justify-content-center flex-gap-1 skills-list">
-							<li>
-								<img src="img/svg/css.svg" alt="css-logo" />
-							</li>
-							<li>
-								<img src="img/svg/reactjs.svg" alt="reactjs-logo" />
-							</li>
-						</ul>
-					</main>
-					<footer class="pt-1">
-						<a class="social-icon fs-2" href="https://github.com/sansnosabe/buscador-peliculas" target="_blank">
-							<i class="social-icon-port fab fa-github git-btn"></i>
-						</a>
-					</footer>
-				</article>
-			</section>
-		</main>
-		<!-- Portfolio End -->
+        <article class="d-flex flex-column align-items-center justify-content-center">
+          <header>
+            <a href="https://github.com/sansnosabe/vue-project" target="_blank">
+              <figure class="zoom-header">
+                <img class="img-port" src="img/portfolio-2.webp" alt="portfolio-2" />
+                <figcaption data-translate="crudDescription">
+                  It's a customer CRUD built with Vue on the front-end and with Node.js, Express, and MySQL on the back-end.
+                </figcaption>
+              </figure>
+            </a>
+          </header>
+          <main class="d-flex flex-column text-center pt-3">
+            <h3>CRUD</h3>
+            <ul class="d-flex justify-content-center flex-gap-1 skills-list">
+              <li>
+                <img src="img/svg/nodejs.svg" alt="nodejs-logo" />
+              </li>
+              <li>
+                <img src="img/svg/express.svg" alt="express-logo" />
+              </li>
+              <li>
+                <img src="img/svg/mysql.svg" alt="mysql-logo" />
+              </li>
+              <li>
+                <img src="img/svg/vuejs.svg" alt="vuejs-logo" />
+              </li>
+            </ul>
+          </main>
+          <footer class="pt-1">
+            <a class="social-icon fs-2" href="https://github.com/sansnosabe/vue-project" target="_blank">
+              <i class="social-icon-port fab fa-github git-btn"></i>
+            </a>
+          </footer>
+        </article>
 
+        <article class="d-flex flex-column align-items-center justify-content-center">
+          <header>
+            <a href="https://github.com/sansnosabe/instapets" target="_blank">
+              <figure class="zoom-header">
+                <img class="img-port" src="img/portfolio-3.webp" alt="portfolio-3" />
+                <figcaption data-translate="photoPetsDescription">Photopets is a copy of Instagram, but the users are animals.</figcaption>
+              </figure>
+            </a>
+          </header>
+          <main class="d-flex flex-column text-center pt-3">
+            <h3>Photopets</h3>
+            <ul class="d-flex justify-content-center flex-gap-1 skills-list">
+              <li>
+                <img src="img/svg/nodejs.svg" alt="nodejs-logo" />
+              </li>
+              <li>
+                <img src="img/svg/express.svg" alt="express-logo" />
+              </li>
+              <li>
+                <img src="img/svg/mysql.svg" alt="mysql-logo" />
+              </li>
+              <li>
+                <img src="img/svg/reactjs.svg" alt="reactjs-logo" />
+              </li>
+              <li>
+                <img src="img/svg/tailwindcss.svg" alt="tailwindcss-logo" />
+              </li>
+            </ul>
+          </main>
+          <footer class="pt-1">
+            <a class="social-icon fs-2" href="https://github.com/sansnosabe/photopets" target="_blank">
+              <i class="social-icon-port fab fa-github git-btn"></i>
+            </a>
+          </footer>
+        </article>
 
-		
-		<!-- Footer Start -->
-		<footer class="d-flex flex-column justify-content-center border-top" id="footer">
-			<div class="d-flex justify-content-center p-3 pt-5">
-				<a class="btn-social btn-light twitter-btn mr-2" href="https://www.twitter.com/sansnosabe" target="_blank">
-					<i class="fab fa-twitter"></i>
-				</a>
-				<a class="btn-social btn-light linkedin-btn mr-2" href="https://www.linkedin.com/in/sandra-erentxun" target="_blank">
-					<i class="fab fa-linkedin-in"></i>
-				</a>
-				<a class="btn-social btn-light instagram-btn mr-2" href="https://www.instagram.com/sansnosabe" target="_blank">
-					<i class="fab fa-instagram"></i>
-				</a>
-				<a class="btn-social btn-light github-btn" href="https://github.com/sansnosabe" target="_blank">
-					<i class="fab fa-github"></i>
-				</a>
-			</div>
-			<div class="d-flex justify-content-center mb-4">
-				<p>Made with ❤ by <a class="sansdev" href="https://github.com/sansnosabe/portfolio" target="_blank">sansdev</a> &copy;2023</p>
-			</div>
-		</footer>
-		<!-- Footer End -->
+        <article class="d-flex flex-column align-items-center justify-content-center">
+          <header>
+            <a href="https://buscador-peliculas-nine.vercel.app/" target="_blank">
+              <figure class="zoom-header">
+                <img class="img-port" src="img/portfolio-4.webp" alt="portfolio-4" />
+                <figcaption data-translate="movieDescription">Movie finder.</figcaption>
+              </figure>
+            </a>
+          </header>
+          <main class="d-flex flex-column text-center pt-3">
+            <h3 data-translate="movieTitle">Movie finder</h3>
+            <ul class="d-flex justify-content-center flex-gap-1 skills-list">
+              <li>
+                <img src="img/svg/css.svg" alt="css-logo" />
+              </li>
+              <li>
+                <img src="img/svg/reactjs.svg" alt="reactjs-logo" />
+              </li>
+            </ul>
+          </main>
+          <footer class="pt-1">
+            <a class="social-icon fs-2" href="https://github.com/sansnosabe/buscador-peliculas" target="_blank">
+              <i class="social-icon-port fab fa-github git-btn"></i>
+            </a>
+          </footer>
+        </article>
+      </section>
+    </main>
+    <!-- Portfolio End -->
 
-		<!-- Back to Top -->
-		<a href="#" class="btn btn-outline-light px-0 back-to-top mb-4">
-			<i class="fa fa-angle-double-up"></i>
-		</a>
+    <!-- Footer Start -->
+    <footer class="d-flex flex-column justify-content-center border-top" id="footer">
+      <div class="d-flex justify-content-center p-3 pt-5">
+        <a class="btn-social btn-light twitter-btn mr-2" href="https://www.twitter.com/sansnosabe" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a class="btn-social btn-light linkedin-btn mr-2" href="https://www.linkedin.com/in/sandra-erentxun" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a class="btn-social btn-light instagram-btn mr-2" href="https://www.instagram.com/sansnosabe" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a class="btn-social btn-light github-btn" href="https://github.com/sansnosabe" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="d-flex justify-content-center mb-4">
+        <p>Made with ❤ by <a class="sansdev" href="https://github.com/sansnosabe/portfolio" target="_blank">sansdev</a> &copy;2023</p>
+      </div>
+    </footer>
+    <!-- Footer End -->
 
-		<!-- JavaScript -->
-		<script
-			src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-			crossorigin="anonymous"
-		></script>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-light px-0 back-to-top mb-4">
+      <i class="fa fa-angle-double-up"></i>
+    </a>
 
-		<script src="lib/typed/typed.js"></script>
-		<script src="lib/easing/easing.min.js"></script>
+    <!-- JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
 
-		<script src="js/main.js"></script>
-		<script src="js/changeLang.js"></script>
-	</body>
+    <script src="lib/typed/typed.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/changeLang.js"></script>
+  </body>
 </html>
