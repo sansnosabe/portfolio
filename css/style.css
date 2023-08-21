@@ -420,6 +420,10 @@ input:checked + .slider:before {
   background: #1d9bf0;
 }
 
+.twitter-x-btn:hover {
+  background: #000000;
+}
+
 .linkedin-btn:hover {
   background: #0a66c2;
 }
